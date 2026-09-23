@@ -1,0 +1,22 @@
+[project]
+name = "italian-brainrot-image-classifier"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Marcus Sostak", email = "marcuss2106@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "ipykernel>=7.3.0",
+    "kagglehub>=1.0.2",
+    "matplotlib>=3.11.2",
+    "ultralytics>=8.4.160",
+]
+
+[project.scripts]
+italian-brainrot-image-classifier = "italian_brainrot_image_classifier:main"
+
+[build-system]
+requires = ["uv_build>=0.12.6,<0.13.0"]
+build-backend = "uv_build"
